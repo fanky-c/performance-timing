@@ -1,9 +1,4 @@
-/*
- * performance-timing.js 0.2
- * https://github.com/tjuking/performance-timing
- */
-
-(function (global, factory) {
+;(function (global, factory) {
 
     "use strict";
 
@@ -97,7 +92,7 @@
         //发送数据到后端
         send: function (url, data) {
             var img = new Image();
-            img.src = url + "?" + $.param(data);
+            img.src = url + "?" + $.param(data);  //post发送
         },
 
         //程序主入口
